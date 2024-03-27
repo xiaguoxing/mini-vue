@@ -53,7 +53,7 @@ export const mutablehandlers={
 export const readonlyHandlers={
   get:readonlyGet,
   set(target,key,value){
-    console.warn(`key:${key}set 失败  因为target是readonly`,target)
+    console.warn(`key:${key}set 失败  因为target是readonly`, target)
     return true
   }
 }
